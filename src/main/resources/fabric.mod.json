@@ -11,6 +11,9 @@
 	"icon": "assets/potatoes/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+          "me.hyper.data.PotatoDataGenHub"
+		],
 		"main": [
 			"me.hyper.PotatoesPlus"
 		],
