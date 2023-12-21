@@ -1,10 +1,7 @@
 package me.hyper.blocks;
 
 import me.hyper.PotatoRegisterer;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.CropBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -13,8 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class BluePotatoBlock extends CropBlock {
-
+public class RedPotatoBlock extends CropBlock {
     public static final int MAX_AGE = 7;
     public static final IntProperty AGE = Properties.AGE_7;
 
@@ -32,25 +28,22 @@ public class BluePotatoBlock extends CropBlock {
         return AGE_TO_SHAPE[(Integer)state.get(this.getAgeProperty())];
     }
 
-    public BluePotatoBlock(Settings settings) {
+    public RedPotatoBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 
     public ItemConvertible getSeedsItem() {
-        return PotatoRegisterer.BLUE_POTATO;
+        return PotatoRegisterer.RED_POTATO;
     }
 
-    @Override
     public IntProperty getAgeProperty() {
         return AGE;
     }
 
-    @Override
     public int getMaxAge() {
         return MAX_AGE;
     }
 
-    @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(AGE);
     }

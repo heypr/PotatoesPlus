@@ -10,6 +10,6 @@ import net.minecraft.client.render.RenderLayer;
 public class PotatoesPlusClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), PotatoesPlus.BLUE_CROP_BLOCK);
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), PotatoRegisterer.BLUE_POTATO_CROP_BLOCK);
 	}
 }
