@@ -1,3 +1,3 @@
-// 1.20.4	2023-12-21T08:48:07.8818764	Potatoes Plus/Block Loot Tables
-33587c129bd7681647d757e20fb373d6daac8e38 data\potatoesplus\loot_tables\blocks\blue_potato.json
-8f79bc81c984338d737c9f6389d81940afa7909c data\potatoesplus\loot_tables\blocks\red_potato.json
+// 1.20.4	2023-12-21T21:25:13.1914492	Potatoes Plus/Block Loot Tables
+5fb2aa4f1e351722f8b8d1d859a664a9f94107d2 data\potatoesplus\loot_tables\blocks\red_potato_crop_block.json
+1d92d0c652c710ea7e375ddbb0495d78c2368c0c data\potatoesplus\loot_tables\blocks\blue_potato_crop_block.json

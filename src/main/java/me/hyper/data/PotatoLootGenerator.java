@@ -3,7 +3,6 @@ package me.hyper.data;
 import me.hyper.PotatoRegisterer;
 import me.hyper.blocks.BluePotatoBlock;
 import me.hyper.blocks.RedPotatoBlock;
-import me.hyper.util.Utilities;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;

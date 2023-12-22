@@ -22,7 +22,7 @@ public class Utilities {
 
     public static void registerCrop(String path, Block block, Item item) {
         Registry.register(Registries.ITEM, new Identifier("potatoesplus", path), item);
-        Registry.register(Registries.BLOCK, new Identifier("potatoesplus", path), block);
+        Registry.register(Registries.BLOCK, new Identifier("potatoesplus", path + "_crop_block"), block);
     }
 
     public static void addItemAfter(RegistryKey<ItemGroup> group, ItemConvertible vanillaItem, ItemConvertible customItem) {

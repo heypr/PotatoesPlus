@@ -25,18 +25,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "potatoesplus:red_potato",
+                  "block": "potatoesplus:blue_potato_crop_block",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "potatoesplus:red_potato"
+              "name": "potatoesplus:blue_potato"
             },
             {
               "type": "minecraft:item",
-              "name": "potatoesplus:red_potato"
+              "name": "potatoesplus:blue_potato"
             }
           ]
         }
@@ -47,7 +47,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "potatoesplus:red_potato",
+          "block": "potatoesplus:blue_potato_crop_block",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "7"
@@ -68,7 +68,7 @@
               }
             }
           ],
-          "name": "potatoesplus:red_potato"
+          "name": "potatoesplus:blue_potato"
         }
       ],
       "rolls": 1.0

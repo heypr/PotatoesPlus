@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"parent": "minecraft:block/crop",
 	"textures": {
-		"crop": "potatoesplus:block/blue_potato_stage2"
+		"crop": "potatoesplus:block/blue_potato/blue_potato_stage0"
 	}
 }
