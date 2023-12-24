@@ -25,9 +25,9 @@ public class Utilities {
         Registry.register(Registries.BLOCK, new Identifier("potatoesplus", path + "_crop_block"), block);
     }
 
-    public static void addItemAfter(RegistryKey<ItemGroup> group, ItemConvertible vanillaItem, ItemConvertible customItem) {
+    public static void addItemAfter(RegistryKey<ItemGroup> group, ItemConvertible firstItem, ItemConvertible secondItem) {
         ItemGroupEvents.modifyEntriesEvent(group).register(content -> {
-            content.addAfter(vanillaItem, customItem);
+            content.addAfter(firstItem, secondItem);
         });
     }
 

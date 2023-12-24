@@ -1,4 +1,10 @@
 {
+  "item.potatoesplus.black_potato": "Black Potato",
   "item.potatoesplus.blue_potato": "Blue Potato",
-  "item.potatoesplus.red_potato": "Red Potato"
+  "item.potatoesplus.green_potato": "Green Potato",
+  "item.potatoesplus.invisible_potato": "Invisible Potato",
+  "item.potatoesplus.red_potato": "Red Potato",
+  "item.potatoesplus.space_potato": "Space Potato",
+  "item.potatoesplus.white_potato": "White Potato",
+  "item.potatoesplus.yellow_potato": "Yellow Potato"
 }

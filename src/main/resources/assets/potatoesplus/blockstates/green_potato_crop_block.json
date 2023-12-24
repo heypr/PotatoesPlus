@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage0"
+    },
+    "age=1": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage0"
+    },
+    "age=2": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage1"
+    },
+    "age=3": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage1"
+    },
+    "age=4": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage2"
+    },
+    "age=5": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage2"
+    },
+    "age=6": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage3"
+    },
+    "age=7": {
+      "model": "potatoesplus:block/green_potato/green_potato_crop_block_stage3"
+    }
+  }
+}

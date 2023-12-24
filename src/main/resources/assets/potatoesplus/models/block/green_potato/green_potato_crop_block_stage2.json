@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/crop",
+	"textures": {
+		"crop": "potatoesplus:block/green_potato/green_potato_stage2"
+	}
+}
