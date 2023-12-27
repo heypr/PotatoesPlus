@@ -1,6 +1,7 @@
 package me.hyper;
 
 import me.hyper.blocks.*;
+import me.hyper.items.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -32,9 +33,19 @@ public class PotatoRegisterer {
     public static final Item WHITE_POTATO = registerBI(WHITE_POTATO_CROP_BLOCK, PotatoesFoodComponents.WHITE_POTATO);
     public static final Item YELLOW_POTATO = registerBI(YELLOW_POTATO_CROP_BLOCK, PotatoesFoodComponents.YELLOW_POTATO);
 
+    //
 
+    public static final BakedBlackPotato BAKED_BLACK_POTATO = new BakedBlackPotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_BLACK_POTATO));
+    public static final BakedBluePotato BAKED_BLUE_POTATO = new BakedBluePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_BLUE_POTATO));
+    public static final BakedGreenPotato BAKED_GREEN_POTATO = new BakedGreenPotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_GREEN_POTATO));
+    public static final BakedInvisiblePotato BAKED_INVISIBLE_POTATO = new BakedInvisiblePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_INVISIBLE_POTATO));
+    public static final BakedRedPotato BAKED_RED_POTATO = new BakedRedPotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_RED_POTATO));
+    public static final BakedSpacePotato BAKED_SPACE_POTATO = new BakedSpacePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_SPACE_POTATO));
+    public static final BakedWhitePotato BAKED_WHITE_POTATO = new BakedWhitePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_WHITE_POTATO));
+    public static final BakedWhitePotato BAKED_YELLOW_POTATO = new BakedWhitePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_YELLOW_POTATO));
+
+    // Registers a block item
     public static AliasedBlockItem registerBI(Block block, FoodComponent food) {
         return new AliasedBlockItem(block, new FabricItemSettings().food(food));
     }
-
 }

@@ -31,6 +31,26 @@ public class PotatoesPlus implements ModInitializer {
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.SPACE_POTATO, PotatoRegisterer.WHITE_POTATO);
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.WHITE_POTATO, PotatoRegisterer.YELLOW_POTATO);
 
+
+		Utilities.registerItem("baked_black_potato", PotatoRegisterer.BAKED_BLACK_POTATO);
+		Utilities.registerItem("baked_blue_potato", PotatoRegisterer.BAKED_BLUE_POTATO);
+		Utilities.registerItem("baked_green_potato", PotatoRegisterer.BAKED_GREEN_POTATO);
+		Utilities.registerItem("baked_invisible_potato", PotatoRegisterer.BAKED_INVISIBLE_POTATO);
+		Utilities.registerItem("baked_red_potato", PotatoRegisterer.BAKED_RED_POTATO);
+		Utilities.registerItem("baked_space_potato", PotatoRegisterer.BAKED_SPACE_POTATO);
+		Utilities.registerItem("baked_white_potato", PotatoRegisterer.BAKED_WHITE_POTATO);
+		Utilities.registerItem("baked_yellow_potato", PotatoRegisterer.BAKED_YELLOW_POTATO);
+
+
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, Items.BAKED_POTATO, PotatoRegisterer.BAKED_BLACK_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_BLACK_POTATO, PotatoRegisterer.BAKED_BLUE_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_BLUE_POTATO, PotatoRegisterer.BAKED_GREEN_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_GREEN_POTATO, PotatoRegisterer.BAKED_INVISIBLE_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_INVISIBLE_POTATO, PotatoRegisterer.BAKED_RED_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_RED_POTATO, PotatoRegisterer.BAKED_SPACE_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_SPACE_POTATO, PotatoRegisterer.BAKED_WHITE_POTATO);
+		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_WHITE_POTATO, PotatoRegisterer.BAKED_YELLOW_POTATO);
+
 		LOGGER.info("Initialized PotatoesPlus.");
 	}
 

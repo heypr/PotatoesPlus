@@ -11,17 +11,22 @@ import net.minecraft.client.render.RenderLayer;
 public class PotatoesPlusClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		registerBlock(PotatoRegisterer.BLACK_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.BLUE_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.GREEN_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.INVISIBLE_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.RED_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.SPACE_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.WHITE_POTATO_CROP_BLOCK);
-		registerBlock(PotatoRegisterer.YELLOW_POTATO_CROP_BLOCK);
+		registerBlock(PotatoRegisterer.BLACK_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.BLUE_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.GREEN_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.INVISIBLE_POTATO_CROP_BLOCK, true);
+		registerBlock(PotatoRegisterer.RED_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.SPACE_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.WHITE_POTATO_CROP_BLOCK, false);
+		registerBlock(PotatoRegisterer.YELLOW_POTATO_CROP_BLOCK, false);
 	}
 
-	public static void registerBlock(Block block) {
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), block);
+	public static void registerBlock(Block block, boolean isTranslucent) {
+		if (isTranslucent) {
+			BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), block);
+		}
+		else {
+			BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), block);
+		}
 	}
 }

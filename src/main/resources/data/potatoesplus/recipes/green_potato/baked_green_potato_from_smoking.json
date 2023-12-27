@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "potatoesplus:green_potato"
+  },
+  "result": "potatoesplus:baked_green_potato"
+}
