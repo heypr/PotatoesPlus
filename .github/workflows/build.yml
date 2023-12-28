@@ -51,4 +51,10 @@ jobs:
       - name: mc-publish
         uses: Kir-Antipov/mc-publish@v3.2
         with:
+          name: "${{env.RELEASE_NAME}}"
+          version: "${{env.VERSION}}"
+          version-type: release
           github-token: ${{ secrets.TOKEN }}
+          loaders: fabric
+          game-versions: "${{env.MINECRAFT_VERSION}}"
+          java: "${{env.JAVA_VERSION}
