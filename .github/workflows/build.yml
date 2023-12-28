@@ -1,5 +1,14 @@
 name: build
-on: [pull_request, push]
+on: [push]
+
+permissions:
+  contents: write
+
+env:
+  MINECRAFT_VERSION: 1.20.4
+  JAVA_VERSION: 17
+  VERSION: 0.5.0+1.20.4
+  RELEASE_NAME: PotatoesPlus-BETA
 
 permissions:
   contents: write
