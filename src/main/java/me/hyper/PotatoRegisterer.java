@@ -2,14 +2,14 @@ package me.hyper;
 
 import me.hyper.blocks.*;
 import me.hyper.food.*;
+import me.hyper.items.SpecialHarvesterItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
+import net.minecraft.util.Rarity;
 
 public class PotatoRegisterer {
 
@@ -43,6 +43,11 @@ public class PotatoRegisterer {
     public static final BakedSpacePotato BAKED_SPACE_POTATO = new BakedSpacePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_SPACE_POTATO));
     public static final BakedWhitePotato BAKED_WHITE_POTATO = new BakedWhitePotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_WHITE_POTATO));
     public static final BakedYellowPotato BAKED_YELLOW_POTATO = new BakedYellowPotato(new FabricItemSettings().food(PotatoesFoodComponents.BAKED_YELLOW_POTATO));
+
+    //
+
+    public static final SpecialHarvesterItem SPECIAL_HARVESTER_ITEM = new SpecialHarvesterItem(new Item.Settings().fireproof().rarity(Rarity.EPIC));
+
 
     // Registers a block item
     public static AliasedBlockItem registerBI(Block block, FoodComponent food) {

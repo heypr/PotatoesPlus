@@ -2,13 +2,19 @@ package me.hyper.blocks;
 
 import me.hyper.PotatoRegisterer;
 import net.minecraft.block.*;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.ItemScatterer;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 
 public class BlackPotatoBlock extends CropBlock {
 
@@ -53,4 +59,14 @@ public class BlackPotatoBlock extends CropBlock {
         builder.add(AGE);
     }
 
+    @Override
+    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        if (!player.getMainHandStack().isOf(PotatoRegisterer.SPECIAL_HARVESTER_ITEM)) {
+            DefaultedList<ItemStack> trashItems = DefaultedList.ofSize(1, Items.POISONOUS_POTATO.getDefaultStack());
+            ItemScatterer.spawn(world, pos, trashItems);
+            player.playSound(soundGroup.getBreakSound(), 1, 1);
+            return Blocks.AIR.getDefaultState();
+        }
+        return super.onBreak(world, pos, state, player);
+    }
 }

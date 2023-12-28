@@ -54,6 +54,9 @@ public class PotatoesPlus implements ModInitializer {
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_WHITE_POTATO, PotatoRegisterer.BAKED_YELLOW_POTATO);
 
 
+		Utilities.registerItem("special_harvester", PotatoRegisterer.SPECIAL_HARVESTER_ITEM);
+
+
 		PotatoesLootTableModifiers.modifyLootTables();
 
 
