@@ -57,4 +57,4 @@ jobs:
           github-token: ${{ secrets.TOKEN }}
           loaders: fabric
           game-versions: "${{env.MINECRAFT_VERSION}}"
-          java: "${{env.JAVA_VERSION}
+          java: "${{env.JAVA_VERSION}"
