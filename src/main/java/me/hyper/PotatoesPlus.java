@@ -1,8 +1,10 @@
 package me.hyper;
 
+import me.hyper.util.PotatoesLootTableModifiers;
 import me.hyper.util.Utilities;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,6 +52,10 @@ public class PotatoesPlus implements ModInitializer {
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_RED_POTATO, PotatoRegisterer.BAKED_SPACE_POTATO);
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_SPACE_POTATO, PotatoRegisterer.BAKED_WHITE_POTATO);
 		Utilities.addItemAfter(ItemGroups.FOOD_AND_DRINK, PotatoRegisterer.BAKED_WHITE_POTATO, PotatoRegisterer.BAKED_YELLOW_POTATO);
+
+
+		PotatoesLootTableModifiers.modifyLootTables();
+
 
 		LOGGER.info("Initialized PotatoesPlus.");
 	}
