@@ -1,4 +1,4 @@
-package me.hyper.items;
+package me.hyper.food;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
