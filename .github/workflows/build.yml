@@ -6,6 +6,15 @@
 name: build
 on: [pull_request, push]
 
+permissions:
+  contents: write
+
+env:
+  MINECRAFT_VERSION: 1.20.4
+  JAVA_VERSION: 17
+  VERSION: 0.5.0+1.20.4
+  RELEASE_NAME: PotatoesPlus-BETA
+
 jobs:
   build:
     strategy:
@@ -39,3 +48,7 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+      - name: mc-publish
+        uses: Kir-Antipov/mc-publish@v3.2
+        with:
+          github-token: ${{ secrets.TOKEN }}
