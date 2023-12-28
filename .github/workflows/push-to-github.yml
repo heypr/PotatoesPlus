@@ -1,0 +1,20 @@
+
+name: Publish on GitHub, CurseForge & Modrinth    #The name of your GitHub Action on github.com
+
+on: [ pull_request, workflow_dispatch ]           #When your GitHub Action will be executed ('pull_request' -> on every Merge(/Pull) Request; 'workflow_dispatch' -> allows manual execution through github.com
+
+env:                                              #Environment variables that can later be referenced using ${{ env.MINECRAFT_VERSION }}. These are useful for repeating information and allow for quick changes for new mod updates
+  MINECRAFT_VERSION: 1.19.2
+  JAVA_VERSION: 17
+
+permissions:
+  contents: write
+
+jobs:                                             #The place where you actually tell the GitHub server what to do.
+  build:                                          #To publish your mod you only need one 'job', here it is called 'build'.
+    runs-on: ubuntu-latest                        #'runs-on' specifies the operation system (linux).
+    steps:
+    - name: mc-publish
+      uses: Kir-Antipov/mc-publish@v3.2
+      with:
+        github-token: ${{ secrets.TOKEN }}
