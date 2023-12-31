@@ -7,7 +7,7 @@ permissions:
 env:
   MINECRAFT_VERSION: 1.20.4
   JAVA_VERSION: 17
-  VERSION: 1.0.1+1.20.4
+  VERSION: 1.0.2+1.20.4
   RELEASE_NAME: PotatoesPlus
 
 jobs:
@@ -47,6 +47,8 @@ jobs:
           version: "${{env.VERSION}}"
           version-type: release
           github-token: ${{ secrets.TOKEN }}
+          modrinth-id: In0lmWjl
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           loaders: fabric
           game-versions: "${{env.MINECRAFT_VERSION}}"
           java: "${{env.JAVA_VERSION}}"
