@@ -7,8 +7,8 @@ permissions:
 env:
   MINECRAFT_VERSION: 1.20.4
   JAVA_VERSION: 17
-  VERSION: 0.5.0+1.20.4
-  RELEASE_NAME: PotatoesPlus-BETA
+  VERSION: 1.0.2+1.20.4
+  RELEASE_NAME: PotatoesPlus
 
 permissions:
   contents: write
@@ -24,10 +24,9 @@ jobs:
     strategy:
       matrix:
         java: [
-          17,
-          21,
+          17
         ]
-        os: [ubuntu-22.04, windows-2022]
+        os: [ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
       - name: checkout repository
@@ -55,8 +54,10 @@ jobs:
         with:
           name: "${{env.RELEASE_NAME}}"
           version: "${{env.VERSION}}"
-          version-type: beta
+          version-type: release
           github-token: ${{ secrets.TOKEN }}
+          modrinth-id: In0lmWjl
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           loaders: fabric
           game-versions: "${{env.MINECRAFT_VERSION}}"
           java: "${{env.JAVA_VERSION}}"

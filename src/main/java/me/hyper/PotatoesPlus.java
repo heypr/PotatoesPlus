@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class PotatoesPlus implements ModInitializer {
 
-    public static final Logger LOGGER = LoggerFactory.getLogger("potatoes");
+    public static final Logger LOGGER = LoggerFactory.getLogger("PotatoesPlus");
 
 	@Override
 	public void onInitialize() {
