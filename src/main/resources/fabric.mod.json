@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "potatoes",
+	"id": "potatoesplus",
 	"version": "${version}",
-	"name": "Potatoes Plus",
+	"name": "PotatoesPlus",
 	"description": "Adds more potato types!",
 	"authors": [
 		"hyper (straw.hat on Discord)"
