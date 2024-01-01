@@ -7,6 +7,7 @@
   "item.potatoesplus.space_potato": "Space Potato",
   "item.potatoesplus.white_potato": "White Potato",
   "item.potatoesplus.yellow_potato": "Yellow Potato",
+
   "item.potatoesplus.baked_black_potato": "Baked Black Potato",
   "item.potatoesplus.baked_blue_potato": "Baked Blue Potato",
   "item.potatoesplus.baked_green_potato": "Baked Green Potato",
@@ -14,5 +15,14 @@
   "item.potatoesplus.baked_red_potato": "Baked Red Potato",
   "item.potatoesplus.baked_space_potato": "Baked Space Potato",
   "item.potatoesplus.baked_white_potato": "Baked White Potato",
-  "item.potatoesplus.baked_yellow_potato": "Baked Yellow Potato"
+  "item.potatoesplus.baked_yellow_potato": "Baked Yellow Potato",
+
+  "block.potatoesplus.black_potato_crop_block": "Black Potatoes",
+  "block.potatoesplus.blue_potato_crop_block": "Blue Potatoes",
+  "block.potatoesplus.green_potato_crop_block": "Green Potatoes",
+  "block.potatoesplus.invisible_potato_crop_block": "Invisible Potatoes",
+  "block.potatoesplus.red_potato_crop_block": "Red Potatoes",
+  "block.potatoesplus.space_potato_crop_block": "Space Potatoes",
+  "block.potatoesplus.white_potato_crop_block": "White Potatoes",
+  "block.potatoesplus.yellow_potato_crop_block": "Yellow Potatoes"
 }
